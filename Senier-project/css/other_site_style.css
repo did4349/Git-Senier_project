@@ -1,0 +1,249 @@
+
+/**************메인헤더**************/
+#main_header{
+    width:200px;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 9999;
+    transition:.3s;
+}
+#main_header:hover{
+    background-color:#000;
+    opacity: 0.8;
+}
+
+
+#main_logo_container{
+    width:100%;
+    height:200px;
+}
+#main_logo_container> a >img{
+    width:180px;
+    position: absolute;
+    top:50px;
+    left:10px;
+}
+/**************메인헤더**************/
+
+
+/**************메인네비**************/
+
+#main_nav_container{
+    width:100%;
+    height:100%;
+}
+#main_nav{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:30px;
+}
+#main_nav > li{
+    margin:40px 0;
+}
+#main_nav > li > a{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Arita-dotum-Medium';
+    transition:.4s;
+}
+#main_nav > li > a:hover{
+    color:#297ebd;
+    border-bottom: 1px solid #297ebd;
+    padding-bottom:10px;
+}
+/**************메인네비**************/
+
+
+
+/**************메인섹션**************/
+#main_section{
+    background:url(../src/other_sites_header.jpg) no-repeat;
+    height:800px;
+    background-position:top center;
+}
+#main_section > #st4_main_logo{
+    height:100%;
+    position: relative;
+}
+#main_section > #st4_main_logo > strong{
+    display: block;
+    width:100%;
+    text-align: right;
+    font-size:70px;
+    font-family: 'MapoDPPA';
+    color:#fff;
+    padding-top:300px;
+}
+#main_section > #st4_main_logo > #down_btn{
+    width:100px;
+    height:64px;
+    position: absolute;
+    bottom:20px;
+    right:170px;
+}
+#main_section > #st4_main_logo > #down_btn > a{
+    display: block;
+    width:64px;
+    margin:0 auto;
+    opacity: 0.5;
+    transition:.4s;
+}
+#main_section > #st4_main_logo > #down_btn > a:hover{
+    opacity: 1;
+}
+/**************메인섹션**************/
+
+
+/*소셜박스*/
+#social_container{
+    width: 100px;
+    height: 200px;
+    position: fixed;
+    right: 20px;
+    top: 45%;
+    z-index: 10;
+    border-radius: 40px;
+    transition: .4s;
+    padding: 20px;
+}
+#social_container:hover{
+    background-color: #000;
+    opacity:0.8;
+}
+#social_container > p{
+    display: block;
+    width:100%;
+    height:50px;
+    font-family: 'Arita-dotum-Medium';
+    text-align: center;
+    color:rgb(212, 212, 212);
+    font-size: 20px;
+}
+#social_container > a{
+    position: absolute;
+    width:16px;
+    height:16px;
+    left:42px;
+    transition: 0.4s;
+}
+#social_container > a.facebook{
+    background: url(../src/social_b_facebook.png) no-repeat;
+    left:47px;
+}
+#social_container > a.facebook:hover{
+    background: url(../src/social_b_facebook_hover.png) no-repeat;
+}
+#social_container > a.instar{
+    background: url(../src/social_b_instar.png) no-repeat;
+    top:109px;
+}
+#social_container > a.instar:hover{
+    background: url(../src/social_b_instar_hover.png) no-repeat;
+}
+#social_container > a.twitter{
+    background: url(../src/social_b_twitter.png) no-repeat;
+    top:153px;
+}
+#social_container > a.twitter:hover{
+    background: url(../src/social_b_twitter_hover.png) no-repeat;
+}
+/*소셜박스*/
+
+
+
+
+.other_section_font{
+    height:150px;
+    border-bottom:5px solid #fff;
+}
+.other_section_font > p{
+    display: block;
+    width:100%;
+    text-align: center;
+    color:#fff;
+    font-size:50px;
+    padding-top:45px;
+    font-family: 'MapoDPPA';
+    opacity: 0.8;
+    transition:.4s;
+}
+
+.contants_box{
+    display: flex;
+    flex-wrap: nowrap;
+    height:300px;
+    border-bottom:1px solid #fff;
+    padding-top:35px;
+}
+.con_logo_box{
+    height:100%;
+    width:50%;
+    padding-top:20px;
+}
+.con_logo_box > img{
+    display: block;
+    margin:0 auto;
+}
+.con_logo_box > a{
+    display: block;
+    width:85px;
+    margin:0 auto;
+    color:#fff;
+    font-family: 'MapoDPPA';
+    font-size:20px;
+    opacity: 0.3;
+    margin-top:30px;
+    transition:.4s;
+}
+.con_logo_box > a:hover{
+    opacity:1;
+}
+
+.con_font_box{
+    height:100%;
+    width:50%;
+    padding:15px;
+}
+
+.con_font_box > strong{
+    display: block;
+    font-family: 'InfinitySans-BoldA1';
+    color:#fff;
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+.con_font_box > p{
+    color:#fff;
+    line-height:25px;
+}
+
+
+#sporting_goods,#Supplementary_food,#food{
+    background-color:#020202;
+    padding-bottom:250px;
+}
+
+#food .contants_box:nth-child(3){
+    border:none;
+}
+
+
+/**************메인푸터**************/
+footer{
+    height:50px;
+    background-color: rgb(70, 70, 70);
+}
+footer > address{
+    display: block;
+    width:100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0.5;
+    padding-top:15px;
+}
+/**************메인푸터**************/
